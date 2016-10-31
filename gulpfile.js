@@ -26,7 +26,7 @@ const fs           = require('fs');
 =========================== */
 
 gulp.task('pug', function() {
-  return gulp.src('src/pug/**/*.pug')
+  return gulp.src('src/pug/**/index.pug')
     .pipe(plumber({
       errorHandler: notify.onError({
         message: 'Error: <%= error.message %>',
